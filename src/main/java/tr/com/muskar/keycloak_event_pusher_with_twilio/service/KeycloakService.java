@@ -58,8 +58,8 @@ public class KeycloakService {
 
     private String createEventMessageFrom(AdminEventRepresentation adminEventRepresentation){
         StringBuilder sb = new StringBuilder();
-        sb.append("Process"+ adminEventRepresentation.getResourceType()).append(System.lineSeparator());
-        sb.append("Operation Type "+adminEventRepresentation.getOperationType());
+        sb.append("Process").append(adminEventRepresentation.getResourceType()).append(System.lineSeparator());
+        sb.append("Operation Type ").append(adminEventRepresentation.getOperationType());
         return sb.toString();
     }
 }
